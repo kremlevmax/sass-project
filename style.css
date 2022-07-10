@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap");
+* {
+  margin: 0%;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Barlow, sans-serif;
+}
+
+.container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+section {
+  margin-top: 6rem;
+}
+section > h2 {
+  text-align: center;
+}
+section > p {
+  text-align: center;
+  width: 42%;
+  margin: 0.6rem auto 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.75rem 1rem;
+  border-radius: 0.4rem;
+  background: #e76f51;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.btn:hover {
+  background: #ec8d75;
+  box-shadow: 0 0.4rem 1.2rem rgba(12, 3, 27, 0.15);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section > p {
+    width: 55%;
+  }
+}/*# sourceMappingURL=style.css.map */
