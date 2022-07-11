@@ -359,8 +359,12 @@ header .container .header__content p {
   opacity: 1;
   visibility: visible;
 }
+#good-boys .container article:hover .good-boy__whatsapp {
+  opacity: 1;
+  visibility: visible;
+}
 #good-boys .container article .good-boy__image {
-  height: 20rem;
+  max-height: 18rem;
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
@@ -389,6 +393,8 @@ header .container .header__content p {
   gap: 1rem;
   opacity: 0;
   visibility: hidden;
+  transition: all 1s ease;
+  transition-delay: 400ms;
 }
 #good-boys .container article .good-boy__socials a {
   background: #ffffff;
@@ -397,13 +403,14 @@ header .container .header__content p {
   display: flex;
   font-size: 0.8rem;
   border-radius: 50%;
+  transition: all 400s ease;
 }
 #good-boys .container article .good-boy__socials a:hover {
   background: #9d4edd;
   color: #ffffff;
 }
 #good-boys .container article .good-boy__whatsapp {
-  background-color: #2a9d8f;
+  background-color: #80c423;
   color: #ffffff;
   position: absolute;
   left: 50%;
@@ -415,4 +422,53 @@ header .container .header__content p {
   font-size: 2rem;
   opacity: 0;
   visibility: hidden;
+  transition: all 1s ease;
+  transition-delay: 400ms;
+}
+
+@media screen and (max-width: 1024px) {
+  #good-boys .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  #good-boys .container {
+    grid-template-columns: 1fr;
+  }
+}
+#testimonials {
+  width: 82%;
+}
+#testimonials .swiper-wrapper .swiper-slide {
+  background: linear-gradient(135deg, #9d4edd, #4cc9f0);
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  cursor: default;
+  font-size: 0.9rem;
+}
+#testimonials .swiper-wrapper .swiper-slide h1,
+#testimonials .swiper-wrapper .swiper-slide h2,
+#testimonials .swiper-wrapper .swiper-slide h3,
+#testimonials .swiper-wrapper .swiper-slide h4,
+#testimonials .swiper-wrapper .swiper-slide h5 {
+  color: #ffffff;
+}
+#testimonials .swiper-wrapper .swiper-slide > p {
+  margin-bottom: 1.5rem;
+}
+#testimonials .swiper-wrapper .swiper-slide .patient {
+  display: flex;
+}
+#testimonials .swiper-wrapper .swiper-slide .patient .avatar {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  #testimonials .container {
+    padding: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
