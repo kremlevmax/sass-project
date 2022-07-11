@@ -6,7 +6,7 @@
   background: $backgroundColor;
   color: $textColor;
   cursor: pointer;
-  transition: all 400ms ease;
+  transition: $transition-speed;
 
   &:hover {
     background: lighten($backgroundColor, $amount: 8%);

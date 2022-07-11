@@ -6,8 +6,7 @@ nav {
   display: grid;
   place-items: center;
   @include gradientBackground;
-  box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
-
+  box-shadow: $shadow;
   .container {
     display: flex;
     justify-content: space-between;
