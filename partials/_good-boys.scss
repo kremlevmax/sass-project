@@ -81,6 +81,7 @@
           font-size: 0.8rem;
           border-radius: 50%;
           transition: all 400s ease;
+          z-index: 2;
 
           &:hover {
             background: $primary-color;

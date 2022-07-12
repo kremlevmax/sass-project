@@ -421,6 +421,7 @@ header .container .header__content p {
   font-size: 0.8rem;
   border-radius: 50%;
   transition: all 400s ease;
+  z-index: 2;
 }
 #good-boys .container article .good-boy__socials a:hover {
   background: #9d4edd;
@@ -555,7 +556,7 @@ header .container .header__content p {
 footer {
   background: #0c031b;
   color: #ffffff;
-  padding-top: 6rem;
+  padding: 6rem 0;
   margin-top: 6rem;
 }
 footer .container {
